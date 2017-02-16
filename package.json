@@ -1,0 +1,8 @@
+{
+  "name": "esm",
+  "version": "1.0.0",
+  "description": "PCG name generator",
+  "main": "index.js",
+  "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
+  "license": "unlicensed"
+}
