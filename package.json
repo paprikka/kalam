@@ -4,6 +4,9 @@
   "description": "PCG name generator",
   "main": "index.js",
   "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
+  "scripts": {
+    "start": "node index"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.14.1",
