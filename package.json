@@ -4,5 +4,12 @@
   "description": "PCG name generator",
   "main": "index.js",
   "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
-  "license": "unlicensed"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.14.1",
+    "markov": "^0.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0"
+  }
 }
