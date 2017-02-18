@@ -10,7 +10,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.14.1",
-    "markov": "^0.0.7"
+    "markov": "^0.0.7",
+    "rx": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^3.15.0"
