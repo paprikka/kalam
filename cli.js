@@ -72,7 +72,7 @@ function rand(min, max) {
 function getRandomItem(list, weight) {
     var total_weight = weight.reduce(function (prev, cur, i, arr) {
         return prev + cur
-    })
+    }, 0)
      
     var random_num = rand(0, total_weight)
     var weight_sum = 0
@@ -104,13 +104,15 @@ function next(node, nodes) {
     return nodes[getRandomItem(linkIDs, samples)]
 }
 
+const randomRange = (min, max) => random() * (max - min) + min
+
 function createWords(graph) {
 
     const graphKeys = keys(graph.nodes)
     const randomIndex = graphKeys[floor(graphKeys.length * random())]
     const randomNode = graph.nodes[randomIndex]
 
-    let max = 5
+    let max = floor(randomRange(2,7))
     let node = randomNode
     let word = randomNode.id
     
