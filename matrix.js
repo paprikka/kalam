@@ -11,6 +11,7 @@ clear()
 
 const filePath = __dirname + '/dict.txt'
 const file$ = getFile(filePath)
+
 runner(
     file$,
     getTokenConfig,
