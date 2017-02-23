@@ -10,7 +10,7 @@ import getTokenConfig from './lib/matrix/get-token-config'
 import createMatrix from './lib/matrix/create-matrix'
 import calculateProbabilities from './lib/matrix/calculate-probabilities'
 import getWord from './lib/matrix/get-word'
-
+import {Observable} from 'rx'
 
 clear()
 
@@ -23,8 +23,10 @@ file$
     .flatMap((tokenConfig: TokenConfig) => {
         return createMatrix(tokenConfig)
                 .map(calculateProbabilities)
-                .flatMap( (matrix: Matrix) => getWord(tokenConfig, matrix))
+                .flatMap( (matrix: Matrix) => {
+                    return Observable.range(0, 20)
+                        .flatMap( _ => getWord(tokenConfig, matrix) )
+                        .reduce( (acc, val)=> acc.concat(val), [] )
+                })
     })
     .subscribe(render)
-
-    // calculateProbabilities
