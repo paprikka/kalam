@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
   "scripts": {
-    "dev": "./node_modules/.bin/babel-watch matrix.js",
+    "dev": "./node_modules/.bin/babel-watch lib/index.js",
     "start": "node index"
   },
   "license": "UNLICENSED",
@@ -14,7 +14,6 @@
     "flow": "^0.2.3",
     "flow-bin": "^0.39.0",
     "global": "^4.3.1",
-    "markov": "^0.0.7",
     "rxjs": "^5.2.0"
   },
   "devDependencies": {
