@@ -1,2 +1,4 @@
 [include]
 ./matrix.js
+[libs]
+flow-typed

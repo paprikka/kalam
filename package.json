@@ -6,6 +6,7 @@
   "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
   "scripts": {
     "dev": "./node_modules/.bin/babel-watch lib/index.js",
+    "dev-hyphenator": "./node_modules/.bin/babel-watch lib/hyphenator",
     "start": "node index"
   },
   "license": "UNLICENSED",
